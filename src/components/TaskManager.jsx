@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 
-const API_URL = 'https://task-manager-bn-e4t4.onrender.com/tasks';
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 const TaskManager = () => {
     const [tasks, setTasks] = useState([]);
